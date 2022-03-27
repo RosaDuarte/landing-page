@@ -1,0 +1,87 @@
+:root{
+    /*Primary*/
+    --light-red-CTA-text: hsl(356, 100%, 66%);
+    --very-light-red-CTA-hover-background: hsl(355, 100%, 74%);
+    --very-dark-blue-headings: hsl(208, 49%, 24%);
+
+    /*Neutral*/
+    --white-text: hsl(0, 0%, 100%);
+    --grayish-blue-footer-text: hsl(240, 2%, 79%);
+    --very-dark-grayish-blue-body-copy: hsl(207, 13%, 34%);
+    --very-dark-black-blue-footer-background: hsl(240, 10%, 16%);
+
+    /*Gradient*/
+
+    /*Background gradient - Intro/CTA mobile nav*/
+    --very-light-red: hsl(13, 100%, 72%);
+    --light-red: hsl(353, 100%, 62%);
+
+    /*Background gradient - body*/
+    --very-dark-gray-blue: hsl(237, 18%, 21%);
+    --very-dark-desaturated-blue: hsl(237, 23%, 32%);
+}
+.navbar{
+    height: 125px;
+}
+.navbar-menu{
+    height: auto;
+}
+header div:first-child{
+    flex-direction: row;
+}
+.navbar-start .navbar-item{
+    color: #fff;
+}
+.navbar-start .navbar-link{
+    color: #fff;
+    padding: 0.5rem 0.75rem;
+}
+a.navbar-item:hover, .navbar-item.has-dropdown:hover .navbar-link{
+    background-color: transparent;
+    color: var(--very-dark-desaturated-blue);
+}
+.navbar-item.is-hoverable:hover .navbar-dropdown{
+    background-color: #fff;
+}
+.navbar-item.is-hoverable:hover .navbar-dropdown .navbar-item{
+    color: var(--light-red);
+}
+.navbar-link{
+    position: absolute;
+    top: -18px;
+    color: #fff;
+}
+.navbar-link:not(.is-arrowless)::after{
+    margin-top: 0;
+    border-color: #fff;
+    position: absolute;
+    top: 12px;
+    left: 100%;
+}
+.navbar-dropdown{
+    position: absolute;
+    top: 20px;
+}
+.navbar-end .navbar-item{
+    margin: auto;
+}
+.navbar-end .navbar-item .button{
+    background-color: transparent;
+    color: var(--white-text);
+    border: none;
+    border-radius: 100px;
+    background-image: none;
+    font-weight: 600;
+}
+
+.navbar-end .navbar-item .button:hover{
+    background-color: var(--very-light-red-CTA-hover-background);
+    color: var(--white-text);
+    border: none;
+}
+.buttons:last-child{
+    margin-bottom: 0;
+}
+footer{
+    height: 250px;
+}
